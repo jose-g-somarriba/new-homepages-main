@@ -1,0 +1,286 @@
+@import url(reset.css);
+
+main{
+  font-family: 'Inter', sans-serif;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 40px;
+ 
+
+}
+.desktop{
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Tai Heritage Pro', serif;
+}
+.list{
+display: flex;
+align-items: center;
+justify-content: end;
+width: 500px;
+height: 100px;
+}
+.list > ul{
+  display: flex;
+  gap: 15px;
+  font-size: 15px;
+ color:  hsl(233, 8%, 79%);
+}
+
+li{
+  font-weight: 400;
+  transition: all .5s ease-out;
+  cursor: pointer;
+}
+li:hover{
+  color: hsl(5, 85%, 63%);
+  
+}
+
+
+.mobile{
+  display: none;
+
+}
+main{
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .container{
+    width: 100%;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    padding: 18px 20px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menuDeplegable{
+    background-color:white;
+    position: absolute;
+    flex-direction: column;
+    z-index: 100;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    display: flex;
+    padding: 20px 20px;
+    transition: all .8s ease-out;
+  }
+
+  .close{
+    display: flex;
+    justify-content: end;
+  }
+  .activemenu{
+    position: absolute;
+    z-index: 100;
+    right: 0;
+
+  }
+ .menuhamburguesa{
+  height: 23px;
+ }
+  .list-mhanburguer{
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 30px;
+    font-size: 30px;
+
+  }
+ .list-m > li{
+  margin-top: 13px;
+  
+ }
+ .container-main{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100% ;
+ }
+ .text-bright{
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+ }
+ .texts-news >h2{
+  font-size: 16px;
+ }
+ .text-left >h2{
+  font-size: 30px !important;
+ }
+ .container-main-article{
+  flex-direction: column;
+  gap: 40px;
+ }
+
+
+}
+
+/* part 2*/
+
+.container-main{
+  width: 80%;
+  height: auto;
+  margin-bottom: 100px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.imagen-web-3{
+  width: 100%;
+  height: auto;
+}
+.news{
+  background-color: hsl(240, 100%, 5%);
+  padding: 30px 20px; 
+  height: auto;
+  width: 780px;
+}
+.texts-news > h2{
+  color: hsl(35, 77%, 62%);
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.text-bright{
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  margin-top: 10px;
+
+}
+.text-left{
+ width: 100%;
+}
+.text-left > h2{
+  font-size: 48px;
+  font-weight: bold;
+  padding: 10px;
+  line-height: 1;
+  font-family: 'Inter', sans-serif;
+}
+.text-right{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 10px;
+}
+.text-right > p{
+  font-size: 14px;
+  color: hsl(236, 13%, 42%);
+  line-height: 1.4;
+}
+
+.text-right > button{
+  margin-top: 20px;
+  width: 50%;
+  height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  letter-spacing: 2px;
+  background-color: hsl(5, 85%, 63%);
+  color: #fff;
+  padding: 2px;
+   font-family: 'Inter', sans-serif;
+   cursor: pointer;
+   transition: all .5s ease-out;
+}
+.text-right > button:hover{
+background-color: hsl(240, 100%, 5%);
+}
+
+.article-new{
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  
+}
+.article-new > h2{
+  font-size: 16px;
+  margin-bottom:17px;
+  margin-top: 18px;
+  font-weight: bold;
+  transition: all .5s ease-out;
+  cursor: pointer;
+}
+.article-new >h2:hover{
+  color:  hsl(35, 77%, 62%);
+}
+.article-new >p{
+   font-size: 13px;
+  color: hsl(236, 13%, 42%);
+
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+
+/*part 3*/
+
+.container-main-article{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.article-01{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.article-01 >img{
+  width: 140px;
+  height: 100px;
+
+}
+.article-main-text{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.article-main-text > h2{
+  font-size: 26px;
+  font-weight: bold;
+  color: hsl(233, 8%, 79%);
+  margin-bottom: 10px;
+}
+.article-main-text > h3{
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  transition: all .5s ease-out;
+  cursor: pointer;
+}
+.article-main-text > h3:hover{
+  color:  hsl(5, 85%, 63%);
+}
+
+.article-main-text > p{
+  font-size: 13px;
+  line-height: 1.4;
+  color: hsl(236, 13%, 42%);
+
+}
